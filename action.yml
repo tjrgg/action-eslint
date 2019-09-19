@@ -1,0 +1,9 @@
+name: 'Lint'
+description: 'Run ESLint'
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+inputs:
+outputs:
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

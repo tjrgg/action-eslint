@@ -1,0 +1,38 @@
+{
+    "name": "action-eslint",
+    "version": "1.0.0",
+    "description": "A GitHub Action for linting TypicalBot.",
+    "license": "MIT",
+    "main": "dist/index.js",
+    "scripts": {
+        "lint": "eslint src scripts",
+        "lint:fix": "eslint src scripts --fix"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/typicalbot/action-eslint.git"
+    },
+    "keywords": [
+        "action",
+        "typicalbot"
+    ],
+    "bugs": {
+        "url": "https://github.com/typicalbot/action-eslint/issues"
+    },
+    "dependencies": {
+        "@actions/core": "^1.1.1",
+        "@actions/github": "^1.1.0",
+        "eslint": "^6.4.0",
+        "eslint-config-typicalbot": "github:typicalbot/typicalbot-eslint"
+    },
+    "devDependencies": {
+        "babel-eslint": "^10.0.3",
+        "eslint": "^6.4.0",
+        "eslint-config-airbnb-base": "^14.0.0",
+        "eslint-config-typicalbot": "github:typicalbot/typicalbot-eslint",
+        "eslint-plugin-import": "^2.18.2"
+    },
+    "eslintConfig": {
+        "extends": "eslint-config-typicalbot"
+    }
+}
